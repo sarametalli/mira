@@ -1,7 +1,4 @@
 import { useState } from "react";
-import Homepage from "../pages/Homepage";
-import About from "../pages/About";
-import Contacts from "../pages/Contacts";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -51,22 +48,24 @@ function Navbar() {
         </div>
 
         {/* Menu mobile (mostrato solo se isOpen è true e siamo sotto lg) */}
+        {/* TODO quando viene cliccato un tasto il menu si chiude */}
+        {/* TODO se ci si trova su quella pagina il bottone non compare */}
         <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
           <ul className="mt-4 space-y-4">
             <li>
-              <a href="#" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
+              <Link to="/" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
+              <Link to="/about" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
                 Chi siamo
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
+              <Link to="/contacts" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
                 Contatti
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
