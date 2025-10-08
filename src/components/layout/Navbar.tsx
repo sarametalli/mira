@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Homepage from "../pages/Homepage";
+import About from "../pages/About";
+import Contacts from "../pages/Contacts";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,9 +19,9 @@ function Navbar() {
           {/* lg:block => visibile solo da 'lg' in su; nascosto su mobile */}
           <div className="hidden lg:block">
             <ul className="flex items-center space-x-8">
-              <li><a href="#" className="text-neutral-900 hover:text-neutral-950">Home</a></li>
-              <li><a href="#" className="text-neutral-900 hover:text-neutral-950">Chi siamo</a></li>
-              <li><a href="#" className="text-neutral-900 hover:text-neutral-950">Contatti</a></li>
+              <li><Link to="/" className="text-neutral-900 hover:text-neutral-950">Home</Link></li>
+              <li><Link to="/about" className="text-neutral-900 hover:text-neutral-950">Chi siamo</Link></li>
+              <li><Link to="/contacts" className="text-neutral-900 hover:text-neutral-950">Contatti</Link></li>
             </ul>
           </div>
 
