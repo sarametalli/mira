@@ -1,42 +1,120 @@
 import MyImageData from "../MyImageData";
 
 function Contacts() {
-    return(
-      <>
-      {/* Immagine con scritta */}
-    <main className="flex-1 overflow-auto z-0">
-        <div className="h-96 bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: `url(${MyImageData[0]})` }}>
-          <div className=" flex bg-neutral-900 bg-opacity-20 w-[100%] py-[3%] justify-center">
-            <h1 className=" text-neutral-950 text-3xl">Contattaci</h1>
-            </div>
+  return (
+    <>
+      {/* Immagine in alto */}
+      <main className="flex-1 overflow-auto z-0">
+        <div
+          className="h-96 bg-cover bg-center flex items-center justify-center"
+          style={{ backgroundImage: `url(${MyImageData[0]})` }}
+        >
+          <div className="flex bg-neutral-900 bg-opacity-20 w-full py-[3%] justify-center">
+            <h1 className="text-neutral-950 text-3xl">Contattaci</h1>
+          </div>
         </div>
       </main>
-    <div className="py-[4%]">
-      {/* Prima parte del form: nome e cognome */}
-      <div className="flex row pt-[3%] mx-[2rem] justify-center">
-        <div className="flex flex-col px-[2%]">
-            <label htmlFor="nome" className="block mb-2 text-sm font-medium text-neutral-900 dark:text-white">Nome</label>
-            <input type="text" id="nome" className="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
+
+      {/* Form sotto, diviso in due colonne */}
+      <div className="py-10 px-8 md:px-20 grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Colonna sinistra: nome, cognome, email, telefono */}
+        <div className="flex flex-col gap-6">
+          <div className="flex gap-4">
+            <div className="flex-1">
+              <label
+                htmlFor="nome"
+                className="block mb-2 text-sm font-medium text-neutral-900 dark:text-white"
+              >
+                Nome
+              </label>
+              <input
+                type="text"
+                id="nome"
+                placeholder="John"
+                className="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+                required
+              />
+            </div>
+
+            <div className="flex-1">
+              <label
+                htmlFor="cognome"
+                className="block mb-2 text-sm font-medium text-neutral-900 dark:text-white"
+              >
+                Cognome
+              </label>
+              <input
+                type="text"
+                id="cognome"
+                placeholder="Doe"
+                className="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+                required
+              />
+            </div>
+          </div>
+
+          <div className="flex gap-4">
+            <div className="flex-1">
+              <label
+                htmlFor="email"
+                className="block mb-2 text-sm font-medium text-neutral-900 dark:text-white"
+              >
+                Email
+              </label>
+              <input
+                type="text"
+                id="email"
+                placeholder="email@email.it"
+                className="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+                required
+              />
+            </div>
+
+            <div className="flex-1">
+              <label
+                htmlFor="telefono"
+                className="block mb-2 text-sm font-medium text-neutral-900 dark:text-white"
+              >
+                Telefono
+              </label>
+              <input
+                type="text"
+                id="telefono"
+                placeholder="+39 111 222 3333"
+                className="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+              />
+            </div>
+            
+          </div>
+<div className="flex justify-center">
+  <button className="bg-violet-600 w-[40%] p-[1%] text-center rounded-full text-neutral-100">
+    Invia
+  </button>
+</div>
+
         </div>
-            <div className="flex flex-col px-[2%]">
-            <label htmlFor="cognome" className="block mb-2 text-sm font-medium text-neutral-900 dark:text-white">Cognome</label>
-            <input type="text" id="cognome" className="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Doe" required />
-        </div>
-        </div>
-        {/* Seconda parte del form: email e telefono */}
-        <div className="flex row pt-[3%] mx-[2rem] justify-center">
-        <div className="flex flex-col px-[2%]">
-            <label htmlFor="email" className="block mb-2 text-sm font-medium text-neutral-900 dark:text-white">Email</label>
-            <input type="text" id="email" className="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="email@email.it" required />
-        </div>
-            <div className="flex flex-col px-[2%]">
-            <label htmlFor="telefono" className="block mb-2 text-sm font-medium text-neutral-900 dark:text-white">Telefono</label>
-            <input type="text" id="telefono" className="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="+39 111 222 3333" />
-        </div>
-        </div>
+
+        {/* Colonna destra: messaggio */}
+        <div className="flex flex-col gap-6">
+          <div>
+            <label
+              htmlFor="messaggio"
+              className="block mb-2 text-sm font-medium text-neutral-900 dark:text-white"
+            >
+              Messaggio
+            </label>
+            <textarea
+              id="messaggio"
+              rows={8}
+              placeholder="Scrivi qui il tuo messaggio..."
+              className="bg-neutral-50 border border-neutral-300 text-neutral-900 text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-white dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+            />
+          </div>
+  
+        </div>  
       </div>
-        </>
-);
+    </>
+  );
 }
 
 export default Contacts;
