@@ -4,8 +4,8 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-neutral-100">
-      <nav className="container mx-auto px-6 py-3 relative top-0">
+    <header>
+      <nav className="bg-neutral-100 container mx-auto px-6 py-3 fixed top-0 z-10">
         <div className="flex items-center justify-between mx-[5%] ">
           <div className="text-neutral-900 font-bold text-xl">
             <a href="#">Logo</a>
