@@ -3,6 +3,7 @@ import MyImageData from "../MyImageData";
 function Contacts() {
   return (
     <>
+    <div className="pb-[5%]">
       {/* Immagine in alto */}
       <main className="flex-1 overflow-auto z-0">
         <div
@@ -86,11 +87,6 @@ function Contacts() {
             </div>
             
           </div>
-<div className="flex justify-center">
-  <button className="bg-violet-600 w-[40%] p-[1%] text-center rounded-full text-neutral-100">
-    Invia
-  </button>
-</div>
 
         </div>
 
@@ -113,6 +109,11 @@ function Contacts() {
   
         </div>  
       </div>
+      <div className="flex justify-center">
+<button className="bg-violet-600 w-[60%] sm:w-[30%] md:w-[25%] lg:w-[15%] p-2 rounded-full text-neutral-100 text-sm md:text-base">    Invia
+  </button>
+</div>
+</div>
     </>
   );
 }

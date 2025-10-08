@@ -7,7 +7,7 @@ function Navbar() {
   {/* due classi perché nella versione desktop deve colorare la pagina selezionata, nella mobile deve farla sparire*/}
 const desktopLinkClasses = ({ isActive }: { isActive: boolean }) =>
   `relative flex items-center justify-center h-full px-4 text-neutral-900 hover:text-neutral-950 transition-all duration-200
-   ${isActive ? "bg-red-500 text-white font-semibold nav-active" : ""}`;
+   ${isActive ? "font-semibold nav-active" : ""}`;
 
   
   const mobileLinkClasses = ({ isActive }: { isActive: boolean }) =>
@@ -17,7 +17,7 @@ const desktopLinkClasses = ({ isActive }: { isActive: boolean }) =>
 
   return (
     <header>
-      <nav className="bg-neutral-100 container mx-auto px-6 py-3 fixed top-0 z-10 w-full">
+      <nav className="bg-neutral-100 container mx-auto px-6 py-3 fixed top-0 z-10 w-[100%]">
         <div className="flex items-center justify-between mx-[5%]">
           <div className="text-neutral-900 font-bold text-xl">
             <NavLink to="/">Logo</NavLink>
