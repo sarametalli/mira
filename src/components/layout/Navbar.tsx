@@ -4,9 +4,15 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const linkClasses = ({ isActive }: { isActive: boolean }) =>
-    `text-neutral-900 hover:text-neutral-950 ${
-      isActive ? "text-red-500 font-semibold" : ""
+  {/* due classi perché nella versione desktop deve colorare la pagina selezionata, nella mobile deve farla sparire*/}
+  const desktopLinkClasses = ({ isActive }: { isActive: boolean }) =>
+    `px-3 py-1 rounded text-neutral-900 hover:text-neutral-950 ${
+      isActive ? "bg-red-500 text-white font-semibold" : ""
+    }`;
+  
+  const mobileLinkClasses = ({ isActive }: { isActive: boolean }) =>
+    `block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded ${
+      isActive ? "hidden" : ""
     }`;
 
   return (
@@ -21,17 +27,17 @@ function Navbar() {
           <div className="hidden lg:block">
             <ul className="flex items-center space-x-8">
               <li>
-                <NavLink to="/" className={linkClasses}>
+                <NavLink to="/" className={desktopLinkClasses}>
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/about" className={linkClasses}>
+                <NavLink to="/about" className={desktopLinkClasses}>
                   Chi siamo
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/contacts" className={linkClasses}>
+                <NavLink to="/contacts" className={desktopLinkClasses}>
                   Contatti
                 </NavLink>
               </li>
@@ -69,7 +75,7 @@ function Navbar() {
             <li>
               <NavLink
                 to="/"
-                className={linkClasses}
+                className={mobileLinkClasses} 
                 onClick={() => setIsOpen(false)}
               >
                 Home
@@ -78,7 +84,7 @@ function Navbar() {
             <li>
               <NavLink
                 to="/about"
-                className={linkClasses}
+                className={mobileLinkClasses}
                 onClick={() => setIsOpen(false)}
               >
                 Chi siamo
@@ -87,7 +93,7 @@ function Navbar() {
             <li>
               <NavLink
                 to="/contacts"
-                className={linkClasses}
+                className={mobileLinkClasses}
                 onClick={() => setIsOpen(false)}
               >
                 Contatti
