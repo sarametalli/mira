@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,7 +21,7 @@ const desktopLinkClasses = ({ isActive }: { isActive: boolean }) =>
       <nav className="bg-neutral-100 container mx-auto px-6 py-3 fixed top-0 z-10 w-[100%]">
         <div className="flex items-center justify-between mx-[5%]">
           <div className="text-neutral-900 font-bold text-xl">
-            <NavLink to="/">Logo</NavLink>
+            <img src="/Mira_nero_viola_orizzontale.svg" alt="Logo" className="h-20 w-auto" />
           </div>
 
           {/* Menu desktop */}
