@@ -5,10 +5,10 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   {/* due classi perché nella versione desktop deve colorare la pagina selezionata, nella mobile deve farla sparire*/}
-  const desktopLinkClasses = ({ isActive }: { isActive: boolean }) =>
-    `px-3 py-1 rounded text-neutral-900 hover:text-neutral-950 ${
-      isActive ? "bg-red-500 text-white font-semibold" : ""
-    }`;
+const desktopLinkClasses = ({ isActive }: { isActive: boolean }) =>
+  `relative flex items-center justify-center h-full px-4 text-neutral-900 hover:text-neutral-950 transition-all duration-200
+   ${isActive ? "bg-red-500 text-white font-semibold nav-active" : ""}`;
+
   
   const mobileLinkClasses = ({ isActive }: { isActive: boolean }) =>
     `block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded ${
