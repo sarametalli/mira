@@ -50,17 +50,17 @@ function Navbar() {
         <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
           <ul className="mt-4 space-y-4">
             <li>
-              <a href="#" className="block px-4 py-2 text-white bg-gray-900 rounded">
+              <a href="#" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="block px-4 py-2 text-white bg-gray-900 rounded">
+              <a href="#" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
                 Chi siamo
               </a>
             </li>
             <li>
-              <a href="#" className="block px-4 py-2 text-white bg-gray-900 rounded">
+              <a href="#" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
                 Contatti
               </a>
             </li>
