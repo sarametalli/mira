@@ -1,28 +1,44 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const linkClasses = ({ isActive }: { isActive: boolean }) =>
+    `text-neutral-900 hover:text-neutral-950 ${
+      isActive ? "text-red-500 font-semibold" : ""
+    }`;
+
   return (
     <header>
-      <nav className="bg-neutral-100 container mx-auto px-6 py-3 fixed top-0 z-10">
-        <div className="flex items-center justify-between mx-[5%] ">
+      <nav className="bg-neutral-100 container mx-auto px-6 py-3 fixed top-0 z-10 w-full">
+        <div className="flex items-center justify-between mx-[5%]">
           <div className="text-neutral-900 font-bold text-xl">
-            <a href="#">Logo</a>
+            <NavLink to="/">Logo</NavLink>
           </div>
 
-          {/* Menu desktop (visibile da un certo breakpoint in su) */}
-          {/* lg:block => visibile solo da 'lg' in su; nascosto su mobile */}
+          {/* Menu desktop */}
           <div className="hidden lg:block">
             <ul className="flex items-center space-x-8">
-              <li><Link to="/" className="text-neutral-900 hover:text-neutral-950">Home</Link></li>
-              <li><Link to="/about" className="text-neutral-900 hover:text-neutral-950">Chi siamo</Link></li>
-              <li><Link to="/contacts" className="text-neutral-900 hover:text-neutral-950">Contatti</Link></li>
+              <li>
+                <NavLink to="/" className={linkClasses}>
+                  Home
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/about" className={linkClasses}>
+                  Chi siamo
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/contacts" className={linkClasses}>
+                  Contatti
+                </NavLink>
+              </li>
             </ul>
           </div>
 
-          {/* Bottone hamburger (visibile solo su mobile/tablet) */}
+          {/* Bottone hamburger */}
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -47,25 +63,35 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Menu mobile (mostrato solo se isOpen è true e siamo sotto lg) */}
-        {/* TODO quando viene cliccato un tasto il menu si chiude */}
-        {/* TODO se ci si trova su quella pagina il bottone non compare */}
+        {/* Menu mobile */}
         <div className={`${isOpen ? "block" : "hidden"} lg:hidden`}>
           <ul className="mt-4 space-y-4">
             <li>
-              <Link to="/" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
+              <NavLink
+                to="/"
+                className={linkClasses}
+                onClick={() => setIsOpen(false)}
+              >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/about" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
+              <NavLink
+                to="/about"
+                className={linkClasses}
+                onClick={() => setIsOpen(false)}
+              >
                 Chi siamo
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to="/contacts" className="block px-4 py-2 bg-neutral-100 text-neutral-900 hover:text-neutral-950 rounded">
+              <NavLink
+                to="/contacts"
+                className={linkClasses}
+                onClick={() => setIsOpen(false)}
+              >
                 Contatti
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
