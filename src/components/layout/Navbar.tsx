@@ -20,10 +20,9 @@ const desktopLinkClasses = ({ isActive }: { isActive: boolean }) =>
     <header>
 <nav className="bg-neutral-100 w-full px-6 py-3 sticky top-0 z-10 shadow-md">
   <div className="flex items-center justify-between w-full">
-    <div className="text-neutral-900 font-bold text-xl">
-            <NavLink to="/"><img src="/logo-light.svg" alt="Logo" className="h-[5.5rem] w-auto" />
+    <div className="overflow-hidden h-[4rem] w-[9rem] flex items-center">
+            <NavLink to="/"><img src="/logo-light1.svg" alt="Logo" className="object-contain w-full h-auto translate-y-[0.5rem]" />
             </NavLink>
-            
           </div>
 
           {/* Menu desktop */}
