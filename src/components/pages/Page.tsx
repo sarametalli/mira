@@ -14,42 +14,61 @@ function Page({
       <h2 className="text-4xl font-bold mb-8">{title}</h2>
 
       <div className="grid grid-cols-2 px-[5%] w-full gap-6">
-        {descriptions.map((desc, i) => (
-          <React.Fragment key={i}>
-            {/* Colonna 1: immagini */}
-            <div className="flex justify-center gap-4">
-              {/* se i è pari e ci sono almeno due immagini successive */}
-              {i % 2 === 1 && i + 1 < images.length ? (
-                <>
+        {descriptions.map((desc, i) => {
+          const hasFirstImage = !!images[i];
+          const hasSecondImage = !!images[i + 1];
+
+          // i pari -> immagine sinistra, descrizione destra
+          if (i % 2 === 0) {
+            return (
+              <React.Fragment key={i}>
+                {/* Colonna sinistra: una sola immagine (se c'è) */}
+                <div className="flex justify-center gap-4">
+                  {hasFirstImage && (
+                    <img
+                      src={images[i]}
+                      alt={`immagine-${i}`}
+                      className="w-40 h-40 object-cover rounded-lg"
+                    />
+                  )}
+                </div>
+
+                {/* Colonna destra: descrizione */}
+                <div className="flex items-center justify-center text-base font-normal text-center">
+                  {desc && <p>{desc}</p>}
+                </div>
+              </React.Fragment>
+            );
+          }
+
+          // i dispari -> descrizione sinistra, due immagini destra
+          return (
+            <React.Fragment key={i}>
+              {/* Colonna sinistra: descrizione */}
+              <div className="flex items-center justify-center text-base font-normal text-center">
+                {desc && <p>{desc}</p>}
+              </div>
+
+              {/* Colonna destra: due immagini (o una sola se manca la seconda) */}
+              <div className="flex justify-center gap-4">
+                {hasFirstImage && (
                   <img
                     src={images[i]}
                     alt={`immagine-${i}`}
                     className="w-40 h-40 object-cover rounded-lg"
                   />
+                )}
+                {hasSecondImage && (
                   <img
                     src={images[i + 1]}
                     alt={`immagine-${i + 1}`}
                     className="w-40 h-40 object-cover rounded-lg"
                   />
-                </>
-              ) : (
-                /* altrimenti, mostra una sola immagine se esiste */
-                images[i] && (
-                  <img
-                    src={images[i]}
-                    alt={`immagine-${i}`}
-                    className="w-40 h-40 object-cover rounded-lg"
-                  />
-                )
-              )}
-            </div>
-
-            {/* Colonna 2: descrizione */}
-            <div className="flex items-center justify-center text-base font-normal text-center">
-              {desc && <p>{desc}</p>}
-            </div>
-          </React.Fragment>
-        ))}
+                )}
+              </div>
+            </React.Fragment>
+          );
+        })}
       </div>
     </div>
   );
