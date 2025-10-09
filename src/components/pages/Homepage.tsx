@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Wedding, Birthday } from '../MyImageData';
 import Page from "./Page";
+import { WeddingData, BirthdayData, WeddingTitle, BirthdayTitle } from "../MyTextData";
 
 function Homepage() {
   const [page, setPage] = useState(0);
@@ -29,10 +30,10 @@ function Homepage() {
           }}
         >
           {/* Pagina 1 */}
-          <Page title={"Pagina 1"} images={Birthday} descriptions={["ciao", "prova"]}/>
+          <Page title={BirthdayTitle} images={Birthday} descriptions={BirthdayData}/>
 
           {/* Pagina 2 */}
-          <Page title={"Pagina 2"} images={Wedding} descriptions={["ciao", "prova"]}/>
+          <Page title={WeddingTitle} images={Wedding} descriptions={WeddingData}/>
           {/* Pagina 3 */}
           <Page title={"Pagina 3"} images={Birthday} descriptions={["ciao", "prova"]}/>
         </div>
