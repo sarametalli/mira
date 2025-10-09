@@ -17,14 +17,14 @@ function Homepage() {
   }
 
     return(
-    <div className="relative w-full h-[90vh] bg-slate-800 overflow-hidden flex items-center justify-center">
+    <div className="relative w-full h-[90vh] overflow-hidden flex items-center justify-center">
       {/* Un contenitore principale contiene 3 pagine */}
       <div
         className="relative w-full h-[90vh]"
         // style={{ perspective: "1200px" }}
       >
         <div
-          className="absolute w-full h-full flex transition-transform duration-2000 ease-in-out transform-style-preserve-3d"
+          className="absolute w-full h-full pt-[5%] flex transition-transform duration-2000 ease-in-out transform-style-preserve-3d"
           style={{
             transform: `translateX(-${page * 100}%)`,
           }}
