@@ -6,44 +6,42 @@ function Homepage() {
 
   {/* funzioni per scorrere le pagine */}
   const nextPage = () => {
-    if (page < totalPages) setPage(page + 1);
-  }
+    if (page < totalPages - 1) setPage(page + 1);
+  };
 
   const prevPage = () => {
     if (page > 0) setPage(page - 1);
   }
 
     return(
-    <div className="relative w-full h-[80vh] bg-slate-800">
-    <input
-      className="hidden peer/slider1 checkbox"
-      type="radio"
-      name="slider"
-      id="slider1"
-      checked
-    />
-    <input
-      className="hidden peer/slider2 checkbox"
-      type="radio"
-      name="slider"
-      id="slider2"
-    />
-    <input
-      className="hidden peer/slider3 checkbox"
-      type="radio"
-      name="slider"
-      id="slider3"
-    />
+    <div className="relative w-full h-[90vh] bg-slate-800 overflow-hidden flex items-center justify-center">
+      {/* Un contenitore principale contiene 3 pagine */}
+      <div
+        className="relative w-full h-[90vh] perspective-1000"
+        style={{ perspective: "1200px" }}
+      >
+        <div
+          className="absolute w-full h-full flex transition-transform duration-2000 ease-in-out transform-style-preserve-3d"
+          style={{
+            transform: `translateX(-${page * 100}%) rotateY(${page * -10}deg)`,
+          }}
+        >
+          {/* Pagina 1 */}
+          <div className="relative w-full h-full flex-shrink-0 bg-red-500 text-white text-3xl font-bold flex items-center justify-center">
+            Pagina 1
+          </div>
 
-    <div
-      className="relative w-[300vw] h-[100%] flex transition-all duration-500 ease-in-out peer-checked/slider1:-left-0 peer-checked/slider2:-left-[100vw] peer-checked/slider3:-left-[200vw]"
-    >
-      <div className="relative w-full h-full flex bg-red-500">
+          {/* Pagina 2 */}
+          <div className="relative w-full h-full flex-shrink-0 bg-amber-500 text-white text-3xl font-bold flex items-center justify-center">
+            Pagina 2
+          </div>
 
+          {/* Pagina 3 */}
+          <div className="relative w-full h-full flex-shrink-0 bg-emerald-500 text-white text-3xl font-bold flex items-center justify-center">
+            Pagina 3
+          </div>
+        </div>
       </div>
-      <div className="relative w-full h-full flex bg-amber-500"></div>
-      <div className="relative w-full h-full flex bg-emerald-500"></div>
-    </div>
 
     <div
       className="absolute w-full flex justify-center gap-2 bottom-12 peer-[&_label:nth-of-type(1)]/slider1:peer-checked/slider1:opacity-100 peer-[&_label:nth-of-type(1)]/slider1:peer-checked/slider1:w-10 peer-[&_label:nth-of-type(2)]/slider2:peer-checked/slider2:opacity-100 peer-[&_label:nth-of-type(2)]/slider2:peer-checked/slider2:w-10 peer-[&_label:nth-of-type(3)]/slider3:peer-checked/slider3:opacity-100 peer-[&_label:nth-of-type(3)]/slider3:peer-checked/slider3:w-10"
