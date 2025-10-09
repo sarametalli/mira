@@ -48,8 +48,8 @@ function Homepage() {
     onClick={prevPage}
     className="
       fixed left-0 top-0 bottom-0 flex items-center justify-center
-    px-4 text-4xl font-bold text-black
-    hover:bg-black hover:bg-opacity-20
+    px-4 text-4xl font-bold text-neutral-700
+    hover:bg-neutral-700 hover:bg-opacity-20 hover:text-neutral-900
     transition-colors
     "
   >
@@ -62,8 +62,8 @@ function Homepage() {
         <button
           onClick={nextPage}
           className="fixed right-0 top-0 bottom-0 flex items-center justify-center
-    px-4 text-4xl font-bold text-black
-    hover:bg-black hover:bg-opacity-20
+    px-4 text-4xl font-bold  text-neutral-700
+    hover:bg-neutral-700 hover:bg-opacity-20 hover:text-neutral-900
     transition-colors"
         >
           ›
