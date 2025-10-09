@@ -29,13 +29,12 @@ function Homepage() {
           }}
         >
           {/* Pagina 1 */}
-          <Page></Page>
+          <Page title={"Pagina 1"}/>
 
           {/* Pagina 2 */}
-          <Page></Page>
-
+          <Page title={"Pagina 2"}/>
           {/* Pagina 3 */}
-          <Page></Page>
+          <Page title={"Pagina 3"}/>
         </div>
       </div>
 
