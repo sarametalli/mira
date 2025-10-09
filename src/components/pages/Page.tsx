@@ -1,8 +1,8 @@
 
 function Page({ title, images, descriptions }: { title: string; images?: string[]; descriptions?: string[] }) {
     return (
-        <div className="relative w-full h-full flex-shrink-0 bg-red-500 text-white text-3xl font-bold flex items-center justify-center">
-            <h2 className="text-4xl mb-4">{title}</h2>
+    <div className="relative w-full h-full flex-shrink-0 bg-red-500 text-white text-3xl flex flex-col items-center justify-start overflow-y-auto p-10">
+            <h2 className="text-4xl font-bold mb-8">{title}</h2>
             {/*Mostra immagini */}
             {images && images.length > 0 && (
         <div className="flex gap-4 flex-wrap justify-center">
@@ -16,8 +16,16 @@ function Page({ title, images, descriptions }: { title: string; images?: string[
           ))}
         </div>
       )}
-            {descriptions} {/* TODO mostrare le descrizioni */}
-            {/* TODO creare un pattern per mostrare immagini e descrizioni*/}
+      {/*Mostra descrizioni */}
+            {descriptions && descriptions.length > 0 && (
+        <div className="mt-4 text-base font-normal max-w-2xl text-center">
+          {descriptions.map((desc, i) => (
+            <p key={i} className="mb-2">
+              {desc}
+            </p>
+          ))}
+        </div>
+      )}
           </div>
     );
 }
