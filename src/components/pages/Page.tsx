@@ -23,7 +23,7 @@ function Page({
             {hasFirstImage && (
               <img
                 src={images[i]}
-                alt={`immagine-${i}`}
+                alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
                 className="w-40 h-40 object-cover rounded-lg"
               />
             )}
@@ -47,14 +47,14 @@ function Page({
           {hasFirstImage && (
             <img
               src={images[i]}
-              alt={`immagine-${i}`}
+              alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
               className="w-40 h-40 object-cover rounded-lg"
             />
           )}
           {hasSecondImage && (
             <img
               src={images[i + 1]}
-              alt={`immagine-${i + 1}`}
+              alt={`${images[i+1].substring(images[i+1].lastIndexOf("/") + 1).split(".")[0]}`}
               className="w-40 h-40 object-cover rounded-lg"
             />
           )}
@@ -78,7 +78,7 @@ function Page({
             <img
               key={idx}
               src={img}
-              alt={`immagine-rimasta-${idx}`}
+              alt={`${images[idx].substring(images[idx].lastIndexOf("/") + 1).split(".")[0]}`}
               className="w-40 h-40 object-cover rounded-lg"
             />
           ))}
