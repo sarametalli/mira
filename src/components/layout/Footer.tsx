@@ -3,7 +3,7 @@ import { FaInstagram, FaTiktok } from "react-icons/fa";
 function Footer() {
   return (
    
-    <footer className="fixed bg-neutral-200 bottom-0 w-full py-[1%] flex justify-between items-center px-[5%] z-10">
+    <footer className="bg-neutral-200 bottom-0 w-full py-[1%] flex justify-between items-center px-[5%] z-10">
       <div className="flex flex-col text-neutral-900"> 
         {/* posiziono due testi a sinistra, due bottoni (cliccabili) con testo a destra  */}
         <p>+39 123456789</p>
