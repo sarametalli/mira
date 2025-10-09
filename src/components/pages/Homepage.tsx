@@ -29,12 +29,8 @@ function Homepage() {
             transform: `translateX(-${page * 100}%)`,
           }}
         >
-          {/* Pagina 1 */}
-          <Page title={BirthdayTitle} images={Birthday} descriptions={BirthdayData}/>
-
-          {/* Pagina 2 */}
           <Page title={WeddingTitle} images={Wedding} descriptions={WeddingData}/>
-          {/* Pagina 3 */}
+          <Page title={BirthdayTitle} images={Birthday} descriptions={BirthdayData}/>
           <Page title={BabyBirthdayTitle} images={BabyBirthday} descriptions={BabyBirthdayData}/>
         </div>
       </div>
