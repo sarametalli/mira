@@ -34,10 +34,10 @@ function Homepage() {
 
   return (
     <div
-      className="relative w-full overflow-hidden flex items-start justify-center p-[1%]"
+      className="relative w-full overflow-hidden flex items-start justify-center"
       style={height ? { height, transition: "height 0.5s" } : undefined}
     >
-      <div className="w-full" ref={wrapperRef}>
+      <div className="w-full p-[1%]" ref={wrapperRef}>
         <Page
           title={pages[page].title}
           images={pages[page].images}

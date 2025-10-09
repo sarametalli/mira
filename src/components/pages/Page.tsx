@@ -16,7 +16,7 @@ const Page: React.FC<PageProps> = ({ title, images, descriptions }) => {
   return (
     <div className="relative bg-neutral-100 text-neutral-900 mb-[1%] text-3xl flex flex-col items-center justify-start overflow-y-auto">
       <h2 className="text-4xl font-bold mb-[2%]">{title}</h2>
-
+      
       <PageContent
         images={images}
         descriptions={descriptions}
@@ -24,14 +24,14 @@ const Page: React.FC<PageProps> = ({ title, images, descriptions }) => {
       />
 
       {remainingImages.length > 0 && (
-        <div className="mt-10 w-full flex flex-wrap justify-center gap-4">
+        <div className="mt-[3%] w-full flex flex-wrap justify-center gap-3">
           {remainingImages.map((img, idx) => (
-            <img
-              key={idx}
-              src={img}
-              alt={`${img.substring(img.lastIndexOf("/") + 1).split(".")[0]}`}
-              className="w-[40%] h-[40%] object-cover rounded-lg"
-            />
+        <img
+          key={idx}
+          src={img}
+          alt={`${img.substring(img.lastIndexOf("/") + 1).split(".")[0]}`}
+          className="w-[25rem] h-[25rem] object-cover"
+        />
           ))}
         </div>
       )}

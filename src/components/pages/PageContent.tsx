@@ -17,18 +17,18 @@ const PageContent: React.FC<PageContentProps> = ({ images, descriptions, onRende
         if (hasFirstImage) count++;
         return (
           <React.Fragment key={i}>
-            <div className="flex justify-center gap-4">
+            <div className="flex justify-center gap-4 items-center px-[1%]">
               {hasFirstImage && (
-                <div className="aspect-square w-full h-full flex items-center justify-center overflow-hidden">
+                <div className="aspect-square w-[50%] h-auto flex items-center justify-center overflow-hidden rounded-md">
                   <img
                     src={images[i]}
                     alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
-                    className="w-full h-full object-cover rounded-lg"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               )}
             </div>
-            <div className="flex items-center justify-center text-base font-normal text-center">
+            <div className="flex items-center justify-center text-base font-normal text-center px-[3%]">
               {desc && <p>{desc}</p>}
             </div>
           </React.Fragment>
@@ -40,22 +40,22 @@ const PageContent: React.FC<PageContentProps> = ({ images, descriptions, onRende
 
       return (
         <React.Fragment key={i}>
-          <div className="flex items-center justify-center text-base font-normal text-center">
+          <div className="flex items-center justify-center text-base font-normal text-center px-[7%]">
             {desc && <p>{desc}</p>}
           </div>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-4 items-center px-[1%]">
             {hasFirstImage && (
               <img
                 src={images[i]}
                 alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
-                className="w-[40%] h-[40%] object-cover rounded-lg"
+                className="aspect-square w-[40%] h-auto flex items-start justify-center overflow-hidden rounded-md"
               />
             )}
             {hasSecondImage && (
               <img
                 src={images[i + 1]}
                 alt={`${images[i + 1].substring(images[i + 1].lastIndexOf("/") + 1).split(".")[0]}`}
-                className="w-[40%] h-[40%] object-cover rounded-lg"
+                className="aspect-square w-[55%] h-auto flex items-start justify-center overflow-hidden rounded-md"
               />
             )}
           </div>
@@ -70,7 +70,7 @@ const PageContent: React.FC<PageContentProps> = ({ images, descriptions, onRende
     if (onRenderedImages) onRenderedImages(renderedImages);
   }, [renderedImages, onRenderedImages]);
 
-  return <div className="grid grid-cols-2 px-[5%] w-full gap-6">{mainContent}</div>;
+  return <div className="grid grid-cols-2 px-[2%] w-full gap-6">{mainContent}</div>;
 };
 
 export default PageContent;
