@@ -48,6 +48,24 @@ function Homepage() {
     <div
       className="absolute w-full flex justify-center gap-2 bottom-12 peer-[&_label:nth-of-type(1)]/slider1:peer-checked/slider1:opacity-100 peer-[&_label:nth-of-type(1)]/slider1:peer-checked/slider1:w-10 peer-[&_label:nth-of-type(2)]/slider2:peer-checked/slider2:opacity-100 peer-[&_label:nth-of-type(2)]/slider2:peer-checked/slider2:w-10 peer-[&_label:nth-of-type(3)]/slider3:peer-checked/slider3:opacity-100 peer-[&_label:nth-of-type(3)]/slider3:peer-checked/slider3:w-10"
     >
+      {/* Bottone sinistro */}
+      {page > 0 && (
+        <button
+          onClick={prevPage}
+          className="absolute left-4 md:left-10 text-white text-4xl font-bold bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full px-4 py-2 transition-all"
+        >
+          ‹
+        </button>
+      )}
+      {/* Bottone destro */}
+      {page < totalPages - 1 && (
+        <button
+          onClick={nextPage}
+          className="absolute right-4 md:right-10 text-white text-4xl font-bold bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full px-4 py-2 transition-all"
+        >
+          ›
+        </button>
+      )}
     </div>
   </div>
 );
