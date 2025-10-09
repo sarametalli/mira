@@ -47,10 +47,10 @@ function Homepage() {
         <button
     onClick={prevPage}
     className="
-      absolute left-0 top-0 h-full flex items-center justify-center
-      px-4 text-4xl font-bold text-black
-      hover:bg-black hover:bg-opacity-20
-      transition-colors
+      fixed left-0 top-0 bottom-0 flex items-center justify-center
+    px-4 text-4xl font-bold text-black
+    hover:bg-black hover:bg-opacity-20
+    transition-colors
     "
   >
     ‹
@@ -61,10 +61,10 @@ function Homepage() {
       {page < totalPages - 1 && (
         <button
           onClick={nextPage}
-          className="absolute right-0 top-0 h-full flex items-center justify-center
-      px-4 text-4xl font-bold text-black
-      hover:bg-black hover:bg-opacity-20
-      transition-colors"
+          className="fixed right-0 top-0 bottom-0 flex items-center justify-center
+    px-4 text-4xl font-bold text-black
+    hover:bg-black hover:bg-opacity-20
+    transition-colors"
         >
           ›
         </button>
