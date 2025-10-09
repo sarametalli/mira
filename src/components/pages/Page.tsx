@@ -14,7 +14,7 @@ const Page: React.FC<PageProps> = ({ title, images, descriptions }) => {
   const remainingImages = images.slice(renderedImages);
 
   return (
-    <div className="relative w-full h-full flex-shrink-0 bg-neutral-100 text-neutral-900 text-3xl flex flex-col items-center justify-start overflow-y-auto p-10">
+    <div className="relative flex-shrink-0 bg-neutral-100 text-neutral-900 text-3xl flex flex-col items-center justify-start overflow-y-auto p-10">
       <h2 className="text-4xl font-bold mb-8">{title}</h2>
 
       <PageContent

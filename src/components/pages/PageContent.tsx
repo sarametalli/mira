@@ -61,7 +61,6 @@ const PageContent: React.FC<PageContentProps> = ({ images, descriptions, onRende
     );
   });
 
-  // callback per dire quante immagini sono state renderizzate
   if (onRenderedImages) onRenderedImages(renderedImages);
 
   return <div className="grid grid-cols-2 px-[5%] w-full gap-6">{mainContent}</div>;
