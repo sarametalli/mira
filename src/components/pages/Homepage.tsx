@@ -34,7 +34,7 @@ function Homepage() {
 
   return (
     <div
-      className="relative w-full overflow-hidden flex items-start justify-center p-[5%]"
+      className="relative w-full overflow-hidden flex items-start justify-center pt-[7%]"
       style={height ? { height, transition: "height 0.5s" } : undefined}
     >
       <div className="w-full pt-[3%]" ref={wrapperRef}>

@@ -18,7 +18,7 @@ const desktopLinkClasses = ({ isActive }: { isActive: boolean }) =>
 
   return (
     <header>
-      <nav className="bg-neutral-100 container mx-auto px-6 py-3 fixed top-0 z-10 w-[100%] shadow-md">
+      <nav className="bg-neutral-100 container px-6 py-3 sticky top-0 z-10 w-[100%] shadow-md">
         <div className="flex items-center justify-between mx-[5%]">
           <div className="text-neutral-900 font-bold text-xl">
             <NavLink to="/"><img src="/logo-light.svg" alt="Logo" className="h-[5.5rem] w-auto" />

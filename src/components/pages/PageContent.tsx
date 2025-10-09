@@ -19,11 +19,13 @@ const PageContent: React.FC<PageContentProps> = ({ images, descriptions, onRende
           <React.Fragment key={i}>
             <div className="flex justify-center gap-4">
               {hasFirstImage && (
-                <img
-                  src={images[i]}
-                  alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
-                  className="w-[50%] h-[50%] object-cover rounded-lg"
-                />
+                <div className="aspect-square w-full h-full flex items-center justify-center overflow-hidden">
+                  <img
+                    src={images[i]}
+                    alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                </div>
               )}
             </div>
             <div className="flex items-center justify-center text-base font-normal text-center">
