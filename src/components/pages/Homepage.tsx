@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Wedding, Birthday } from '../MyImageData';
+import Page from "./Page";
 
 function Homepage() {
   const [page, setPage] = useState(0);
@@ -27,19 +29,13 @@ function Homepage() {
           }}
         >
           {/* Pagina 1 */}
-          <div className="relative w-full h-full flex-shrink-0 bg-red-500 text-white text-3xl font-bold flex items-center justify-center">
-            Pagina 1
-          </div>
+          <Page></Page>
 
           {/* Pagina 2 */}
-          <div className="relative w-full h-full flex-shrink-0 bg-amber-500 text-white text-3xl font-bold flex items-center justify-center">
-            Pagina 2
-          </div>
+          <Page></Page>
 
           {/* Pagina 3 */}
-          <div className="relative w-full h-full flex-shrink-0 bg-emerald-500 text-white text-3xl font-bold flex items-center justify-center">
-            Pagina 3
-          </div>
+          <Page></Page>
         </div>
       </div>
 
