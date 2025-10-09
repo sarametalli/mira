@@ -23,7 +23,7 @@ function Homepage() {
         <div
           className="absolute w-full h-full flex transition-transform duration-2000 ease-in-out transform-style-preserve-3d"
           style={{
-            transform: `translateX(-${page * 100}%) rotateY(${page * -10}deg)`,
+            transform: `translateX(-${page * 100}%) rotateY(${page * -5}deg)`,
           }}
         >
           {/* Pagina 1 */}
