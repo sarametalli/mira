@@ -36,7 +36,7 @@ function Homepage() {
       style={{ height }}
     >
       {/* Container slides */}
-      <div className="w-full">
+      <div className="w-full pt-[3%]">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${page * 100}%)` }}
