@@ -1,4 +1,18 @@
+import { useState } from "react";
+
 function Homepage() {
+  const [page, setPage] = useState(0);
+  const totalPages = 3;
+
+  {/* funzioni per scorrere le pagine */}
+  const nextPage = () => {
+    if (page < totalPages) setPage(page + 1);
+  }
+
+  const prevPage = () => {
+    if (page > 0) setPage(page - 1);
+  }
+
     return(
     <div className="relative w-full h-[80vh] bg-slate-800">
     <input
@@ -34,21 +48,6 @@ function Homepage() {
     <div
       className="absolute w-full flex justify-center gap-2 bottom-12 peer-[&_label:nth-of-type(1)]/slider1:peer-checked/slider1:opacity-100 peer-[&_label:nth-of-type(1)]/slider1:peer-checked/slider1:w-10 peer-[&_label:nth-of-type(2)]/slider2:peer-checked/slider2:opacity-100 peer-[&_label:nth-of-type(2)]/slider2:peer-checked/slider2:w-10 peer-[&_label:nth-of-type(3)]/slider3:peer-checked/slider3:opacity-100 peer-[&_label:nth-of-type(3)]/slider3:peer-checked/slider3:w-10"
     >
-      <label
-        className="block w-5 h-5 bg-white cursor-pointer opacity-50 z-10 transition-all duration-300 ease-in-out hover:scale-125 hover:opacity-100"
-        htmlFor="slider1"
-      >
-      </label>
-      <label
-        className="block w-5 h-5 bg-white cursor-pointer opacity-50 z-10 transition-all duration-300 ease-in-out hover:scale-125 hover:opacity-100"
-        htmlFor="slider2"
-      >
-      </label>
-      <label
-        className="block w-5 h-5 bg-white cursor-pointer opacity-50 z-10 transition-all duration-300 ease-in-out hover:scale-125 hover:opacity-100"
-        htmlFor="slider3"
-      >
-      </label>
     </div>
   </div>
 );
