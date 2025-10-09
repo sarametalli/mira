@@ -8,9 +8,15 @@ import wedding4 from '../assets/images/enchanted_wedding4.jpg';
 import birtday1 from '../assets/images/great_gatsby1.jpg';
 import birtday2 from '../assets/images/great_gatsby2.jpg';
 import birtday3 from '../assets/images/great_gatsby3.jpg';
+import babyBirthday1 from '../assets/images/candyland1.jpg';
+import babyBirthday2 from '../assets/images/candyland2.jpg';
+import babyBirthday3 from '../assets/images/candyland3.jpg';
+import babyBirthday4 from '../assets/images/candyland4.jpg';
+import babyBirthday5 from '../assets/images/candyland5.jpg';
+import babyBirthday6 from '../assets/images/candyland6.jpg';
 
 const Wedding = [bride_groom, wedding1, wedding2, wedding3, wedding4];
 const Birthday = [birtday1, birtday2, birtday3];
+const BabyBirthday = [babyBirthday1, babyBirthday2, babyBirthday3, babyBirthday4, babyBirthday5, babyBirthday6];
 
-
-export { eventplanning, Wedding, Birthday, party };
+export { eventplanning, Wedding, Birthday, party, BabyBirthday };
