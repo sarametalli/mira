@@ -19,22 +19,22 @@ function Homepage() {
     <div className="relative w-full h-[90vh] bg-slate-800 overflow-hidden flex items-center justify-center">
       {/* Un contenitore principale contiene 3 pagine */}
       <div
-        className="relative w-full h-[90vh] perspective-1000"
-        style={{ perspective: "1200px" }}
+        className="relative w-full h-[90vh]"
+        // style={{ perspective: "1200px" }}
       >
         <div
           className="absolute w-full h-full flex transition-transform duration-2000 ease-in-out transform-style-preserve-3d"
           style={{
-            transform: `translateX(-${page * 100}%) rotateY(${page * -5}deg)`,
+            transform: `translateX(-${page * 100}%)`,
           }}
         >
           {/* Pagina 1 */}
           <Page title={"Pagina 1"} images={Birthday} descriptions={["ciao", "prova"]}/>
 
           {/* Pagina 2 */}
-          <Page title={"Pagina 2"} images={Wedding}/>
+          <Page title={"Pagina 2"} images={Wedding} descriptions={["ciao", "prova"]}/>
           {/* Pagina 3 */}
-          <Page title={"Pagina 3"}/>
+          <Page title={"Pagina 3"} images={Birthday} descriptions={["ciao", "prova"]}/>
         </div>
       </div>
 
