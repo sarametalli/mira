@@ -45,17 +45,26 @@ function Homepage() {
       {/* Bottone sinistro */}
       {page > 0 && (
         <button
-          onClick={prevPage}
-          className="absolute left-4 md:left-10 text-white text-4xl font-bold bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full px-4 py-2 transition-all"
-        >
-          ‹
-        </button>
+    onClick={prevPage}
+    className="
+      absolute left-0 top-0 h-full flex items-center justify-center
+      px-4 text-4xl font-bold text-black
+      hover:bg-black hover:bg-opacity-20
+      transition-colors
+    "
+  >
+    ‹
+  </button>
+
       )}
       {/* Bottone destro */}
       {page < totalPages - 1 && (
         <button
           onClick={nextPage}
-          className="absolute right-4 md:right-10 text-white text-4xl font-bold bg-black bg-opacity-30 hover:bg-opacity-50 rounded-full px-4 py-2 transition-all"
+          className="absolute right-0 top-0 h-full flex items-center justify-center
+      px-4 text-4xl font-bold text-black
+      hover:bg-black hover:bg-opacity-20
+      transition-colors"
         >
           ›
         </button>

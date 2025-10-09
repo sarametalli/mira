@@ -10,7 +10,7 @@ function Page({
   descriptions: string[];
 }) {
   let rendered_images = 0;
-
+  {/*TODO dividere il contenuto dalla pagina visualizzata in modo da adattare le dimensioni alla pagina */}
   const mainContent = descriptions.map((desc, i) => {
     const hasFirstImage = !!images[i];
     const hasSecondImage = !!images[i + 1];
@@ -24,7 +24,7 @@ function Page({
               <img
                 src={images[i]}
                 alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
-                className="w-40 h-40 object-cover rounded-lg"
+                className="w-[50%] h-[50%] object-cover rounded-lg"
               />
             )}
           </div>
@@ -48,14 +48,14 @@ function Page({
             <img
               src={images[i]}
               alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
-              className="w-40 h-40 object-cover rounded-lg"
+              className="w-[40%] h-[40%] object-cover rounded-lg"
             />
           )}
           {hasSecondImage && (
             <img
               src={images[i + 1]}
               alt={`${images[i+1].substring(images[i+1].lastIndexOf("/") + 1).split(".")[0]}`}
-              className="w-40 h-40 object-cover rounded-lg"
+              className="w-[40%] h-[40%] object-cover rounded-lg"
             />
           )}
         </div>
@@ -67,7 +67,7 @@ function Page({
   const remainingImages = images.slice(rendered_images);
 
   return (
-    <div className="relative w-full h-full flex-shrink-0 bg-neutral-100 text-neutral-900 text-3xl flex flex-col items-center justify-start overflow-y-auto p-10">
+    <div className="relative w-full h-full flex-shrink-0 py-[5%] bg-neutral-100 text-neutral-900 text-3xl flex flex-col items-center justify-start overflow-y-auto p-10">
       <h2 className="text-4xl font-bold mb-8">{title}</h2>
 
       <div className="grid grid-cols-2 px-[5%] w-full gap-6">{mainContent}</div>
@@ -79,7 +79,7 @@ function Page({
               key={idx}
               src={img}
               alt={`${images[idx].substring(images[idx].lastIndexOf("/") + 1).split(".")[0]}`}
-              className="w-40 h-40 object-cover rounded-lg"
+              className="w-[] h-[] object-cover rounded-lg"
             />
           ))}
         </div>
