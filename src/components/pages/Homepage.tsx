@@ -29,7 +29,7 @@ function Homepage() {
           }}
         >
           {/* Pagina 1 */}
-          <Page title={"Pagina 1"}/>
+          <Page title={"Pagina 1"} images={Birthday}/>
 
           {/* Pagina 2 */}
           <Page title={"Pagina 2"}/>
