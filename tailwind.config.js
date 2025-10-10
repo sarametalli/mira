@@ -14,10 +14,12 @@ export default {
         hoverblack: "#01020A",
         hoverwhite: "#f7f7ff",
         cgrey: "#babac6",
-        darkgrey: "#9090a3", //TODO scegliere un grigio più scuro
+        darkgrey: "#32323d", //TODO scegliere un grigio più scuro
         lightgrey: "#e4e4e9",
         neutral: "#f2f2f4",
-        darkneutral: "#e4e4e8"
+        darkneutral: "#e4e4e8",
+        brown: "#2d2b05",
+        darkbrown: "#1c1a03"
       },
       fontFamily: {
         calligraphy: ["MonteCarlo", "cursive"],

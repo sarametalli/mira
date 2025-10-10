@@ -34,7 +34,7 @@ function Homepage() {
 
   return (
     <div
-      className="relative w-full overflow-hidden flex items-start justify-center"
+      className="relative w-full overflow-hidden flex items-start justify-center bg-neutral"
       style={height ? { height, transition: "height 0.5s" } : undefined}
     >
       <div className="w-full p-[1%]" ref={wrapperRef}>
@@ -51,8 +51,8 @@ function Homepage() {
           onClick={prevPage}
           className="
             fixed left-0 top-0 bottom-0 flex items-center justify-center
-            px-4 text-4xl font-bold text-neutral-700
-            hover:bg-neutral-700 hover:bg-opacity-20 hover:text-neutral-900
+            px-4 text-4xl font-bold text-cblack text-opacity-40
+            hover:bg-cblack hover:bg-opacity-20 hover:text-cblack hover:text-opacity-100
             transition-colors
           "
         >
@@ -64,8 +64,8 @@ function Homepage() {
           onClick={nextPage}
           className="
             fixed right-0 top-0 bottom-0 flex items-center justify-center
-            px-4 text-4xl font-bold text-neutral-700
-            hover:bg-neutral-700 hover:bg-opacity-20 hover:text-neutral-900
+            px-4 text-4xl font-bold text-cblack text-opacity-40
+            hover:bg-cblack hover:bg-opacity-20 hover:text-cblack hover:text-opacity-100
             transition-colors
           "
         >
