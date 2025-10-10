@@ -3,14 +3,14 @@ import { party } from "../MyImageData";
 function Contacts() {
   return (
     <>
-    <div className="pb-[5%]">
+    <div className="pb-[5%] bg-cwhite">
       {/* Immagine in alto */}
       <main className="flex-1 overflow-auto z-0">
         <div
-          className="h-96 bg-cover bg-center flex items-center justify-center bg-primary bg-blend-darken"
+          className="h-96 bg-cover bg-center flex items-center justify-center bg-primary bg-blend-multiply"
           style={{ backgroundImage: `url(${party })` }}
         >
-          <div className="flex bg-cblack bg-opacity-35 w-full py-[5%] justify-center">
+          <div className="flex bg-cblack bg-opacity-35 w-full h-full justify-center items-center">
             <h1 className="text-cwhite text-4xl font-titles">Contattaci</h1>
           </div>
         </div>
@@ -110,7 +110,7 @@ function Contacts() {
         </div>  
       </div>
       <div className="flex justify-center">
-<button className="bg-primary hover:bg-secondary w-[60%] sm:w-[10%] md:w-[25%] lg:w-[15%] p-2 rounded-full text-cblack text-p md:text-base shadow-md hover:shadow-lg">    Invia
+<button className="bg-secondary hover:bg-primary w-[60%] sm:w-[10%] md:w-[25%] lg:w-[15%] p-2 rounded-full text-cwhite font-bold text-p md:text-base shadow-md hover:shadow-lg">    Invia
   </button>
 </div>
 </div>

@@ -10,9 +10,9 @@ function About() {
           <img src= {eventplanning} alt="image" loading="lazy" width="" height=""></img>
         </div>
         <div className="md:7/12 lg:w-6/12">
-          <h2 className="text-2xl text-cblack font-bold md:text-4xl">Nuxt development is carried out by passionate developers</h2>
-          <p className="mt-6 text-darkgrey">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
-          <p className="mt-4 text-darkgrey"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
+          <h2 className="text-2xl text-cblack font-titles font-bold md:text-4xl">Nuxt development is carried out by passionate developers</h2>
+          <p className="mt-6 font-p text-darkgrey">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum omnis voluptatem accusantium nemo perspiciatis delectus atque autem! Voluptatum tenetur beatae unde aperiam, repellat expedita consequatur! Officiis id consequatur atque doloremque!</p>
+          <p className="mt-4 font-p text-darkgrey"> Nobis minus voluptatibus pariatur dignissimos libero quaerat iure expedita at? Asperiores nemo possimus nesciunt dicta veniam aspernatur quam mollitia.</p>
         </div>
       </div>
   </div>

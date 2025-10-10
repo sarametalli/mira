@@ -14,7 +14,7 @@ export default {
         hoverblack: "#01020A",
         hoverwhite: "#f7f7ff",
         cgrey: "#babac6",
-        darkgrey: "#32323d", //TODO scegliere un grigio più scuro
+        darkgrey: "#32323d",
         lightgrey: "#e4e4e9",
         neutral: "#f2f2f4",
         darkneutral: "#e4e4e8",
