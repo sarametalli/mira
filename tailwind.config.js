@@ -7,28 +7,32 @@ export default {
   theme: {
     extend: {
       colors: {
-        //versione light
-        background: {
-          light: "#F8F8FE",
-          dark: "#01020A",
-        },
-        text: {
-          light: "#01020A",
-          dark: "#F8F8FE",
-        },
-        imgBg: {
-          light: "#8E94F2",
-          dark: "#7c83f0",
-        },
-        primary: "#8E94F2", //primary e secondary sono uguali 
+        primary: "#8E94F2",
         secondary: "#7c83f0",
+        cwhite: "#F8F8FE",
+        cblack: "#03051c",
+        hoverblack: "#01020A",
+        hoverwhite: "#f7f7ff",
+        cgrey: "#babac6",
+        darkgrey: "9090a3",
+        lightgrey: "e4e4e9",
+        neutral: "f2f2f4",
+        darkneutral: "e4e4e8"
       },
       fontFamily: {
-        //TODO
+        calligrapy: ["MonteCarlo", "cursive"],
+        titles: ["Montserrat", "sans-serif"],
+        p: ["Nunito", "sans-serif"]
       },
       fontSize: {
-        //TODO
-      }
+        xs: "0.75rem",
+        sm: "0.875rem",
+        base: "1rem",
+        lg: "1.125rem",
+        xl: "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+      },
     },
   },
   plugins: [],
