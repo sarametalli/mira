@@ -7,11 +7,11 @@ function Contacts() {
       {/* Immagine in alto */}
       <main className="flex-1 overflow-auto z-0">
         <div
-          className="h-96 bg-cover bg-center flex items-center justify-center"
+          className="h-96 bg-cover bg-center flex items-center justify-center bg-primary bg-blend-darken"
           style={{ backgroundImage: `url(${party })` }}
         >
-          <div className="flex bg-neutral-900 bg-opacity-20 w-full py-[3%] justify-center">
-            <h1 className="text-neutral-950 text-3xl">Contattaci</h1>
+          <div className="flex bg-cblack bg-opacity-35 w-full py-[5%] justify-center">
+            <h1 className="text-cwhite text-4xl font-titles">Contattaci</h1>
           </div>
         </div>
       </main>
