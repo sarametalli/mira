@@ -14,10 +14,10 @@ export default {
         hoverblack: "#01020A",
         hoverwhite: "#f7f7ff",
         cgrey: "#babac6",
-        darkgrey: "9090a3",
-        lightgrey: "e4e4e9",
-        neutral: "f2f2f4",
-        darkneutral: "e4e4e8"
+        darkgrey: "#9090a3",
+        lightgrey: "#e4e4e9",
+        neutral: "#f2f2f4",
+        darkneutral: "#e4e4e8"
       },
       fontFamily: {
         calligrapy: ["MonteCarlo", "cursive"],
