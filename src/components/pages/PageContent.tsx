@@ -40,7 +40,7 @@ const PageContent: React.FC<PageContentProps> = ({ images, descriptions, onRende
             )}
 
             </div>
-        <div className="flex items-center font-p justify-center text-sm sm:text-base text-center px-[3%] text-darkbrown">
+        <div className="flex items-center font-p justify-center text-xs sm:text-base text-center px-[3%] text-darkbrown">
               {desc && <p>{desc}</p>}
             </div>
           </React.Fragment>
