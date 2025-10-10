@@ -22,7 +22,7 @@ export default {
         darkbrown: "#1c1a03"
       },
       fontFamily: {
-        calligraphy: ["MonteCarlo", "cursive"],
+        calligraphy: ["Parisienne", "cursive"],
         titles: ["Montserrat", "sans-serif"],
         p: ["Nunito", "sans-serif"]
       },
