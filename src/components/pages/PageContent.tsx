@@ -19,16 +19,17 @@ const PageContent: React.FC<PageContentProps> = ({ images, descriptions, onRende
           <React.Fragment key={i}>
             <div className="flex justify-center gap-4 items-center px-[1%]">
               {hasFirstImage && (
-<div className="aspect-square w-[80%] h-auto flex items-center justify-center sm:w-[50%] overflow-hidden rounded-md">
+                <div className="relative aspect-square w-[80%] h-auto flex items-center justify-center sm:w-[50%] overflow-hidden rounded-md">
                   <img
                     src={images[i]}
                     alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover mix-blend-multiply"
                   />
+                  <div className="absolute inset-0 bg-primary opacity-10"></div>
                 </div>
               )}
             </div>
-            <div className="flex items-center font-p justify-center text-base text-center px-[3%] text-cblack">
+            <div className="flex items-center font-p justify-center text-base text-center px-[3%] text-darkbrown">
               {desc && <p>{desc}</p>}
             </div>
           </React.Fragment>
@@ -40,23 +41,30 @@ const PageContent: React.FC<PageContentProps> = ({ images, descriptions, onRende
 
       return (
         <React.Fragment key={i}>
-          <div className="flex items-center justify-center text-base font-p text-center px-[7%] text-cblack">
+          <div className="flex items-center justify-center text-base font-p text-center px-[7%] text-darkbrown">
             {desc && <p>{desc}</p>}
           </div>
+
           <div className="flex justify-center gap-4 items-center px-[1%]">
             {hasFirstImage && (
-              <img
-                src={images[i]}
-                alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
-                className="aspect-square w-[40%] h-auto flex items-start justify-center overflow-hidden rounded-md"
-              />
+              <div className="relative aspect-square w-[40%] h-auto flex items-start justify-center overflow-hidden rounded-md">
+                <img
+                  src={images[i]}
+                  alt={`${images[i].substring(images[i].lastIndexOf("/") + 1).split(".")[0]}`}
+                  className="w-full h-full object-cover mix-blend-multiply"
+                />
+                <div className="absolute inset-0 bg-primary opacity-10"></div>
+              </div>
             )}
             {hasSecondImage && (
-              <img
-                src={images[i + 1]}
-                alt={`${images[i + 1].substring(images[i + 1].lastIndexOf("/") + 1).split(".")[0]}`}
-                className="aspect-square w-[55%] h-auto flex items-start justify-center overflow-hidden rounded-md"
-              />
+              <div className="relative aspect-square w-[55%] h-auto flex items-start justify-center overflow-hidden rounded-md">
+                <img
+                  src={images[i + 1]}
+                  alt={`${images[i + 1].substring(images[i + 1].lastIndexOf("/") + 1).split(".")[0]}`}
+                  className="w-full h-full object-cover mix-blend-multiply"
+                />
+                <div className="absolute inset-0 bg-primary opacity-10"></div>
+              </div>
             )}
           </div>
         </React.Fragment>

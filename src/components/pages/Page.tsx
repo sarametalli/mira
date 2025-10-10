@@ -15,7 +15,7 @@ const Page: React.FC<PageProps> = ({ title, images, descriptions }) => {
 
   return (
     <div className="relative cblack mb-[1%] flex flex-col items-center justify-center overflow-y-auto">
-      <h2 className="text-6xl text-center text-cblack font-calligraphy mb-[2%] p-[3%]">{title}</h2>
+      <h2 className="text-6xl text-center text-cblack font-calligraphy mb-[2%] p-[3%] text-brown">{title}</h2>
       
       <PageContent
         images={images}
