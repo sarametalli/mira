@@ -32,7 +32,7 @@ function Contacts() {
                 type="text"
                 id="nome"
                 placeholder="John"
-                className="bg-hoverwhite border border-darkgrey text-cblack text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-cwhite dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+                className="bg-hoverwhite font-p border border-darkgrey text-cblack text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-cwhite dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
                 required
               />
             </div>
@@ -48,7 +48,7 @@ function Contacts() {
                 type="text"
                 id="cognome"
                 placeholder="Doe"
-                className="bg-hoverwhite border border-darkgrey text-cblack text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-cwhite dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+                className="bg-hoverwhite font-p border border-darkgrey text-cblack text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-cwhite dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
                 required
               />
             </div>
@@ -66,7 +66,7 @@ function Contacts() {
                 type="text"
                 id="email"
                 placeholder="email@email.it"
-                className="bg-hoverwhite border border-darkgrey text-cblack text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-cwhite dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+                className="bg-hoverwhite font-p border border-darkgrey text-cblack text-sm rounded-lg block w-full p-2.5 focus:ring-neutral-500 focus:border-neutral-500 dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-cwhite dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
                 required
               />
             </div>
@@ -82,7 +82,7 @@ function Contacts() {
                 type="text"
                 id="telefono"
                 placeholder="+39 111 222 3333"
-                className="bg-hoverwhite border border-darkgrey text-cblack text-sm rounded-lg block w-full p-2.5 focus:ring-cblack focus:border-cblack dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-cwhite dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+                className="bg-hoverwhite font-p border border-darkgrey text-cblack text-sm rounded-lg block w-full p-2.5 focus:ring-cblack focus:border-cblack dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-cwhite dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
               />
             </div>
             
@@ -103,7 +103,7 @@ function Contacts() {
               id="messaggio"
               rows={8}
               placeholder="Scrivi qui il tuo messaggio..."
-              className="bg-hoverwhite border border-darkgrey text-cblack text-sm rounded-lg block w-full p-2.5 focus:ring-cblack focus:border-cblack dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-cwhite dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
+              className="font-p bg-hoverwhite border border-darkgrey text-cblack text-sm rounded-lg block w-full p-2.5 focus:ring-cblack focus:border-cblack dark:bg-neutral-700 dark:border-neutral-600 dark:placeholder-neutral-400 dark:text-cwhite dark:focus:ring-neutral-500 dark:focus:border-neutral-500"
             />
           </div>
   

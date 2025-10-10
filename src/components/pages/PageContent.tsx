@@ -28,7 +28,7 @@ const PageContent: React.FC<PageContentProps> = ({ images, descriptions, onRende
                 </div>
               )}
             </div>
-            <div className="flex items-center justify-center text-base font-normal text-center px-[3%]">
+            <div className="flex items-center font-p justify-center text-base text-center px-[3%] text-cblack">
               {desc && <p>{desc}</p>}
             </div>
           </React.Fragment>
@@ -40,7 +40,7 @@ const PageContent: React.FC<PageContentProps> = ({ images, descriptions, onRende
 
       return (
         <React.Fragment key={i}>
-          <div className="flex items-center justify-center text-base font-normal text-center px-[7%]">
+          <div className="flex items-center justify-center text-base font-p text-center px-[7%] text-cblack">
             {desc && <p>{desc}</p>}
           </div>
           <div className="flex justify-center gap-4 items-center px-[1%]">
