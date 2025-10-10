@@ -110,7 +110,7 @@ function Contacts() {
         </div>  
       </div>
       <div className="flex justify-center">
-<button className="bg-violet-600 w-[60%] sm:w-[30%] md:w-[25%] lg:w-[15%] p-2 rounded-full text-neutral-100 text-sm md:text-base">    Invia
+<button className="bg-primary hover:bg-secondary w-[60%] sm:w-[10%] md:w-[25%] lg:w-[15%] p-2 rounded-full text-cblack text-p md:text-base shadow-md hover:shadow-lg">    Invia
   </button>
 </div>
 </div>
