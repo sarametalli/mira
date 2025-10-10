@@ -20,7 +20,7 @@ export default {
         darkneutral: "#e4e4e8"
       },
       fontFamily: {
-        calligrapy: ["MonteCarlo", "cursive"],
+        calligraphy: ["MonteCarlo", "cursive"],
         titles: ["Montserrat", "sans-serif"],
         p: ["Nunito", "sans-serif"]
       },

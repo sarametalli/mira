@@ -14,8 +14,8 @@ const Page: React.FC<PageProps> = ({ title, images, descriptions }) => {
   const remainingImages = images.slice(renderedImages);
 
   return (
-    <div className="relative bg-neutral-100 text-neutral-900 mb-[1%] text-3xl flex flex-col items-center justify-start overflow-y-auto">
-      <h2 className="text-4xl font-bold mb-[2%]">{title}</h2>
+    <div className="relative cblack mb-[1%] flex flex-col items-center justify-center overflow-y-auto">
+      <h2 className="text-6xl text-center font-calligraphy mb-[2%]">{title}</h2>
       
       <PageContent
         images={images}
@@ -30,7 +30,7 @@ const Page: React.FC<PageProps> = ({ title, images, descriptions }) => {
           key={idx}
           src={img}
           alt={`${img.substring(img.lastIndexOf("/") + 1).split(".")[0]}`}
-          className="w-[25rem] h-[25rem] object-cover"
+          className="w-[25rem] h-[25rem] object-cover rounded-md"
         />
           ))}
         </div>
