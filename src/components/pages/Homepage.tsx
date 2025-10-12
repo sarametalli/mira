@@ -42,12 +42,16 @@ function Homepage() {
         <div className="absolute inset-px rounded-lg bg-cwhite"></div>
         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
           <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-            <p className="mt-2 text-lg font-medium tracking-tight text-cblack max-lg:text-center">Cerimonie</p>
-            <p className="mt-2 max-w-lg text-sm/6 text-darkgrey max-lg:text-center">Celebra qualsiasi cerimonia con un evento speciale, fatto su misura per te!</p>
+            <p className="mt-2 text-lg font-medium tracking-tight font-titles text-cblack max-lg:text-center">Cerimonie</p>
+            <p className="mt-2 max-w-lg text-sm/6 text-darkgrey font-p max-lg:text-center">Celebra qualsiasi cerimonia con un evento speciale, fatto su misura per te!</p>
           </div>
-          <div className="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-            <img src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-security.png" alt="" className="h-[min(152px,40cqw)] object-cover" />
+          <div className="flex justify-center py-10 sm:px-10 lg:pb-4">
+    <div className="inline-flex items-center justify-center gap-2 bg-brown/20 p-2 rounded-xl">
+            <img src={homeImages[5]} alt="" className="w-full max-lg:max-w-xs aspect-square overflow-hidden rounded-md" />
+            <img src={homeImages[6]} alt="" className="w-full max-lg:max-w-xs aspect-square overflow-hidden rounded-md" />
+            <img src={homeImages[7]} alt="" className="w-full max-lg:max-w-xs aspect-square overflow-hidden rounded-md" />
           </div>
+        </div>
         </div>
         <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5"></div>
       </div>
