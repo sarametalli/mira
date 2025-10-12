@@ -19,9 +19,12 @@ import cake from '../assets/images/cake.jpg';
 import location1 from '../assets/images/location.jpg';
 import location2 from '../assets/images/location2.jpg';
 import themeParty from '../assets/images/themeparty.jpg';
+import bombonniere from '../assets/images/bomboniere.jpg';
+import baptism from '../assets/images/battesimo.jpg';
+import buffet from '../assets/images/buffet.jpg';
 
 const Wedding = [bride_groom, wedding1, wedding2, wedding3, wedding4];
 const Birthday = [birtday1, birtday2, birtday3];
 const BabyBirthday = [babyBirthday1, babyBirthday2, babyBirthday3, babyBirthday4, babyBirthday5, babyBirthday6];
-const homeImages = [wedding, themeParty, cake, location1, location2];
+const homeImages = [wedding, themeParty, cake, location1, location2, bombonniere, baptism, buffet];
 export { eventplanning, Wedding, Birthday, party, BabyBirthday, homeImages };
