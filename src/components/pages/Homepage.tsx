@@ -2,8 +2,7 @@ function Homepage() {
     return(
         <div className="bg-gray-50 py-24 sm:py-32">
   <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-    <h2 className="text-center text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
-    <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">Everything you need to deploy your app</p>
+    <p className="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight text-balance text-gray-950 sm:text-5xl">I nostri pacchetti</p>
     <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
       <div className="relative lg:row-span-2">
         <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-4xl"></div>
@@ -58,7 +57,6 @@ function Homepage() {
               <div className="flex bg-gray-900 outline outline-white/5">
                 <div className="-mb-px flex text-sm/6 font-medium text-gray-400">
                   <div className="border-r border-b border-r-white/10 border-b-white/20 bg-white/5 px-4 py-2 text-white">NotificationSetting.jsx</div>
-                  <div className="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
                 </div>
               </div>
               <div className="px-6 pt-6 pb-14">
