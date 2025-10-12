@@ -5,6 +5,7 @@ import Footer from "./components/layout/Footer";
 import Events from "./components/pages/Events";
 import About from "./components/pages/About";
 import Contacts from "./components/pages/Contacts";
+import Homepage from "./components/pages/Homepage";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <Navbar />
         <main className="flex-1 overflow-auto bg-neutral-100">
           <Routes>
-            <Route path="/" element={<Events />} />
+            <Route path="/" element={<Homepage />} />
+            <Route path="/events" element={<Events />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
