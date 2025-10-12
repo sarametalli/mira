@@ -51,8 +51,8 @@ function Homepage() {
         <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-4xl lg:rounded-r-4xl"></div>
         <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
           <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
-            <p className="mt-2 text-lg font-medium tracking-tight text-gray-950 max-lg:text-center">Powerful APIs</p>
-            <p className="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget sem sodales gravida.</p>
+            <p className="mt-2 text-lg font-medium tracking-tight font-titles text-cblack max-lg:text-center">Feste a tema</p>
+            <p className="mt-2 max-w-lg text-sm/6 text-darkgrey font-p max-lg:text-center">Scegli uno dei nostri temi più gettonati oppure crea il tuo!</p>
           </div>
           <div className="relative min-h-120 w-full grow">
             <div className="absolute top-10 right-0 bottom-0 left-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl outline outline-white/10">
