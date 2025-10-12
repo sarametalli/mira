@@ -14,7 +14,7 @@ function Homepage() {
             <p className="mt-2 max-w-lg text-sm/6 text-darkgrey font-p max-lg:text-center">Organizza il tuo matrimonio dei sogni.</p>
           </div>
           <div className="@container relative min-h-120 w-full grow max-lg:mx-auto max-lg:max-w-sm">
-            <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-brown bg-primary shadow-2xl">
+            <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-opacity-20 border-x-[3cqw] border-t-[3cqw] border-brown">
               <img src={homeImages[0]} alt="" className="size-full object-cover object-top" />
             </div>
           </div>
