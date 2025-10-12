@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-import Homepage from "./components/pages/Homepage";
+import Events from "./components/pages/Events";
 import About from "./components/pages/About";
 import Contacts from "./components/pages/Contacts";
 
@@ -13,7 +13,7 @@ function App() {
         <Navbar />
         <main className="flex-1 overflow-auto bg-neutral-100">
           <Routes>
-            <Route path="/" element={<Homepage />} />
+            <Route path="/" element={<Events />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
           </Routes>

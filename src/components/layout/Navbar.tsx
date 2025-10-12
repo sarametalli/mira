@@ -30,7 +30,7 @@ const desktopLinkClasses = ({ isActive }: { isActive: boolean }) =>
             <ul className="flex items-center space-x-8 text-p">
               <li>
                 <NavLink to="/" className={desktopLinkClasses}>
-                  Home
+                  Eventi
                 </NavLink>
               </li>
               <li>

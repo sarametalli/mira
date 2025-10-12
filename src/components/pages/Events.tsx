@@ -9,7 +9,7 @@ const pages = [
   { title: BabyBirthdayTitle, images: BabyBirthday, descriptions: BabyBirthdayData },
 ];
 
-function Homepage() {
+function EventsPage() {
   const [page, setPage] = useState(0);
   const totalPages = pages.length;
 
@@ -76,4 +76,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default EventsPage;
