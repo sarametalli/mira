@@ -87,6 +87,13 @@ const desktopLinkClasses = ({ isActive }: { isActive: boolean }) =>
               >
                 Home
               </NavLink>
+              <NavLink
+                to="/events"
+                className={mobileLinkClasses} 
+                onClick={() => setIsOpen(false)}
+              >
+                Eventi
+              </NavLink>
             </li>
             <li>
               <NavLink
